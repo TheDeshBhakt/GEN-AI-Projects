@@ -1,6 +1,6 @@
 # Varanasi AI Guide
 
-Welcome to the Varanasi AI Guide, a comprehensive platform to explore the city of Varanasi through an intelligent chat interface. This project provides information about places to visit, historical stories, development projects, and more.
+Welcome to the City AI Guide, a comprehensive platform to explore the city navigator through an intelligent chat interface. This project provides information about places to visit, historical stories, development projects, and more.
 
 ## Project Overview
 
