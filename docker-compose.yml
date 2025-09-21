@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Use a volume to persist the vector store and data
+      # This is important so you don't have to re-scrape and re-index every time
+      - ./backend/vectorstore:/app/vectorstore
+      - ./backend/data:/app/data
+    env_file:
+      - ./backend/.env
+    networks:
+      - varanasi-net
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:80" # Map host port 5173 to container port 80 (nginx)
+    depends_on:
+      - backend
+    networks:
+      - varanasi-net
+
+networks:
+  varanasi-net:
+    driver: bridge
