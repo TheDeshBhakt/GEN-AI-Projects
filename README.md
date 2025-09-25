@@ -6,7 +6,7 @@ Welcome to the City AI Navigator, a comprehensive platform to explore the city t
 
 This project consists of three main components:
 
-1.  **Web Scraper:** A Python script that scrapes data from various official and informational websites about Varanasi.
+1.  **Web Scraper:** A Python script that scrapes data from various official and informational websites about Cities {replace scraper with your own}.
 2.  **AI Agent (RAG Pipeline):** A Retrieval-Augmented Generation (RAG) pipeline that uses the scraped data to provide answers to user queries. It leverages LangChain, ChromaDB, and a Large Language Model (LLM) like OpenAI's GPT.
 3.  **Web Application:** A user-friendly chat interface built with Svelte for the frontend and FastAPI for the backend.
 
